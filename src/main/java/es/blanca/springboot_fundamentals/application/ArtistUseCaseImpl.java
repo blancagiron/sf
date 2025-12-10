@@ -1,6 +1,5 @@
 package es.blanca.springboot_fundamentals.application;
 
-import com.sun.source.tree.AnnotatedTypeTree;
 import es.blanca.springboot_fundamentals.application.utils.ApplicationConstants;
 import es.blanca.springboot_fundamentals.domain.exceptions.ArtistAlreadyExistsException;
 import es.blanca.springboot_fundamentals.domain.exceptions.ArtistInPlaylistException;
@@ -8,7 +7,6 @@ import es.blanca.springboot_fundamentals.domain.exceptions.ArtistNotFoundExcepti
 import es.blanca.springboot_fundamentals.domain.exceptions.InvalidGenreException;
 import es.blanca.springboot_fundamentals.domain.model.Artist;
 import es.blanca.springboot_fundamentals.domain.model.Genre;
-import es.blanca.springboot_fundamentals.domain.model.Song;
 import es.blanca.springboot_fundamentals.domain.port.in.ArtistUseCase;
 import es.blanca.springboot_fundamentals.domain.port.out.ArtistRepositoryPort;
 import es.blanca.springboot_fundamentals.domain.port.out.GenreRepositoryPort;

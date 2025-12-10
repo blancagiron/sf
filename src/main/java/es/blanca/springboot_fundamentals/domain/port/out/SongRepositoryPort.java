@@ -13,4 +13,5 @@ public interface SongRepositoryPort {
 	boolean existsById(Long id);
 
 	boolean playlistContainsSongsByArtist(Long artistId);
+	boolean existsByNameAndArtistId(String name, Long artistId);
 }
