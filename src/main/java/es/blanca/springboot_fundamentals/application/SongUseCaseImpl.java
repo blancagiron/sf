@@ -30,7 +30,7 @@ public class SongUseCaseImpl implements SongUseCase {
 
 		// check there isn´t already a song with the same name and artist
 		if (songRepositoryPort.existsByNameAndArtistId(song.getName(), song.getArtist().getId())) {
-			throw new SongAlreadyExistsException(String.format(ApplicationConstants.ARTIST_ALREADY_EXISTS, song.getName()));
+			throw new SongAlreadyExistsException(String.format(ApplicationConstants.SONG_ALREADY_EXISTS, song.getName()));
 		}
 
 		// check that genre belongs to the artist

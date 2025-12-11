@@ -13,7 +13,7 @@ public class ApplicationConstants {
 
 	// Song
 	public static final String SONG_NOT_FOUND = "Song with id %d not found";
-	public static final String SONG_ALREADY_EXISTS = "Song already exists";
+	public static final String SONG_ALREADY_EXISTS = "Song with name %s already exists";
 	public static final String SONG_GENRE_NOT_MATCH_ARTIST = "The song's genre does not belong to the selected artist";
 	public static final String DURATION_MUST_BE_POSITIVE = "Duration must be a positive integer";
 

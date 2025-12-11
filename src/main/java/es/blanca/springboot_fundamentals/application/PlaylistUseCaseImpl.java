@@ -124,8 +124,9 @@ public class PlaylistUseCaseImpl implements PlaylistUseCase {
 			if (songFound != null) {
 				playlist.getSongs().remove(songFound);
 				playlistRepositoryPort.save(playlist);
+			}else{
+				throw new SongNotFoundException(String.format(ApplicationConstants.SONG_NOT_FOUND, songId));
 			}
-
 		}
 	}
 }
